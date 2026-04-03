@@ -6,14 +6,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Table(name="airbnb")
 public class Airbnb
 {
     @Id
@@ -22,11 +20,11 @@ public class Airbnb
 
     private String name;
 
-    private String desc;
+    private String description;
 
     @Column(nullable = false)
     private Long pricePerNight;
 
-    private String loctaion;
+    private String location;
 
 }
